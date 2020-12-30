@@ -5,18 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praia da Cigana</title>
 </head>
-<body>
+        <link rel="stylesheet" href="/styles/main.css">
+        <script type="text/javascript" src= "js/main.js"></script>
+
+<body onload="load()"> <!-- mensagem de que está carregada -->
     <section>
-        <head class="topo">
+        <head>
             <h1>Praia da Cigana</h1>
-            <img src="/images/cigana.jpg" alt="Logo">
+            <img class="logo" src="/images/logo-cigana2.png" alt="Logo">
         </head>
+
+        <div class="sol">
+            <img src="/images/Sol novo.png" alt="Sol">
+        </div>
+        
         
         <div class="menu_topo">
-            <a href="http://127.0.0.1:5501/praia_da_cigana/historico.html" onclick="abrir" target="_blanck">Histórico</a>
-            <a href="https://www.google.com.br/maps/place/Estreito+-+MA,+65975-000/@-6.7635082,-47.4509316,10z/data=!3m1!4b1!4m5!3m4!1s0x92d0a07affb8ae95:0x9036cb855f7697c9!8m2!3d-6.5579812!4d-47.450171?hl=pt-BR" onclick="abrir" target="_blanck">Localização</a>
-            <a href="https://www.guiaviagensbrasil.com/blog/fotos-das-10-melhores-praias-de-maceio/" onclick="abrir" target="_blanck">Fotos</a>
-        </div>
+           
+            <div class="button1">
+            <button id="button1" type="button" onclick="abrir(this)">Associação</button>
+            <!-- <button id="button" onmouseover="abrir(this)" onmouseout="voltar(this)" >Associação</button> -->
+            <p id="historico" onclick="redir_historico(this)"></p>
+            <p id="fotos" onclick="redir_fotos(this)"></p>
+            <p id="cardapio" onclick="redir_cardapio(this)"></p>
+            </div>
+            <!-- <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouser aqui</p> -->
+
+            <div class="button2">
+            <button type="button" onclick="abrir2(this)" >Eventos</button>
+            <p id="feijoada" onclick="redirecionar(this)"></p> 
+            <p id="festival-sorvete" onclick="redirecionar(this)"></p>
+            <p id="corrida-canoa" onclick="redirecionar(this)"></p>
+            </div>
+
+            <div class="button3">
+                <button type="button" onclick="abrir3(this)" >Pedidos</button>
+                <p id="peixe" onclick="redir_peixe(this)"></p> 
+                <p id="suco" onclick="redir_suco(this)"></p>
+                    
+                    <select onchange="menu_suco(this)">
+                        <option value="suco1">Laranja</option>
+                        <option value="suco2">Goiaba</option>
+                        <option value="suco3">Abacaxi</option>
+                    </select>
+                <p id="carne" onclick="redir_carne(this)"></p>
+
+            </div>
+           
+        </div >
+
+      
     </section>
     
     
