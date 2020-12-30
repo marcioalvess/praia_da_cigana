@@ -4,31 +4,40 @@ body{
     padding: 0px;
     background-color: cornflowerblue;
 }
+
+.titulo {
+    display: flex;
+    font-size: 4rem;
+    color: rgb(75, 71, 64);
+    padding:0;
+    height: 0;
+    height: 0;
+    margin:1rem;
+}
+
 .logo {
         
     display: flex;
-    margin-top: -30px;
+    margin-top: -2rem; /* distância da imagem pra margem de cima */
     margin-left: auto; /* puou a imagem pra esquerda */
     height: 15rem;
     width: 17rem;
-    padding: -30%; 
+    padding:0; 
     background-color: cornflowerblue;
+    margin-right: 2rem;/* distância da imagem pra margem direita */
 }
 .sol{
     justify-content: center;
-    justify-self: center;
-    margin-left: 30px;
-    height: 0;
-    width: 0;
+    height: 1rem;
+    width: -10rem;
+    margin-left: 20rem;
+    margin-right: 10rem;
     padding:0;
-    margin: center;
+   
       
 }
 
-h1{
-    text-transform: none;
-    font: ;
-}
+
     
 button {
         background: steelblue;
@@ -36,38 +45,45 @@ button {
         border:transparent;
         background:transparent;
         justify-content:space-evenly;/* espaço constante ente os botões */
-        padding:-100%;
         font-size: 20px;/* tamanho da fonte */
         font: archivo;
+        margin-left: 2rem;
+        margin-right: 2rem;
         text-decoration: none;
-        text-transform: none;
+        text-transform:uppercase;/* transforma o texte em maiúsculo */
         transition: background 0.2s;
         
 }
 
     .menu_topo{
         display:-webkit-flex;
-        padding:-30px;
-        width: 5rem;
-        height:2rem;
-        /* border-radius:30%; */
+        padding:0;
+        width: 0;
+        height:0;
+        border:0;
         justify-content: space-around;/* espaço entre os botões */
         /* align-items:center; */ /* Esse que não estava deixando o botão fixo */
         /* flex-direction: column; --> coloca um em baixo do outro*/
-        background-color: #ffffff;
-        width: 60%;
-        margin-top: -55px;
-        justify:right;
-        outline: 0px;
+        background-color: transparent;/*cor de fundo dos botões */
+        width: 80%;/* localização exata na página */
+        margin-top:-8%;/* distância dos botões pra margem superior */
+       /*  margin-right: 2px;
+        margin-left: 2px; */
+        margin:center;
+        /*  outline: 55px; */
         cursor: pointer;/* mãozinha quando passar o mouse */
+        
     }
     
 
     .button1 {
-        /* justify-content: space-around; */
+        justify-content: space-around;
         flex-direction: column;
         border: 0px;
         color:blue;
+        text-justify: inter-word;
+        margin:0;
+        
 
     }
 
