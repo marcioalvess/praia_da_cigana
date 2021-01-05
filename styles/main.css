@@ -1,14 +1,24 @@
+
+/* Variáveis das cores*/
+:root{
+    --color-background:#6495ed;
+    --color-text-button:#631563;
+    --color-text-titulo:#1f1f3f; 
+
+}
+
 html,
-body{
+body
+{
     height: 100vh;
     padding: 0px;
-    background-color: cornflowerblue;
+    background-color:var(--color-background);
 }
 
 .titulo {
     display: flex;
     font-size: 4rem;
-    color: rgb(75, 71, 64);
+    color: var(--color-text-titulo);
     padding:0;
     height: 0;
     height: 0;
@@ -23,7 +33,6 @@ body{
     height: 15rem;
     width: 17rem;
     padding:0; 
-    background-color: cornflowerblue;
     margin-right: 2rem;/* distância da imagem pra margem direita */
 }
 .sol{
@@ -33,26 +42,31 @@ body{
     margin-left: 20rem;
     margin-right: 10rem;
     padding:0;
-   
-      
+       
 }
-
-
     
 button {
-        background: steelblue;
-        color:black;
+        color:var(--color-text-button);
+        font-weight: bold;/* negrito */
         border:transparent;
         background:transparent;
         justify-content:space-evenly;/* espaço constante ente os botões */
         font-size: 20px;/* tamanho da fonte */
         font: archivo;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: -1rem;
+        margin-right: 0;
         text-decoration: none;
         text-transform:uppercase;/* transforma o texte em maiúsculo */
         transition: background 0.2s;
+        cursor: pointer;
+
         
+}
+.titulo {
+    padding: 3.2rem 2rem;
+    background-color: transparent;
+    border-top: 1px solid var(--color-text-titulo);
+    margin-top: 3.2rem;
 }
 
     .menu_topo{
@@ -61,39 +75,37 @@ button {
         width: 0;
         height:0;
         border:0;
+
         justify-content: space-around;/* espaço entre os botões */
         /* align-items:center; */ /* Esse que não estava deixando o botão fixo */
         /* flex-direction: column; --> coloca um em baixo do outro*/
         background-color: transparent;/*cor de fundo dos botões */
         width: 80%;/* localização exata na página */
         margin-top:-8%;/* distância dos botões pra margem superior */
-       /*  margin-right: 2px;
-        margin-left: 2px; */
-        margin:center;
+        margin-right: 0;
+        margin-left: 2rem;
+        
         /*  outline: 55px; */
         cursor: pointer;/* mãozinha quando passar o mouse */
         
     }
     
-
-    .button1 {
+    .button1,
+    .button2,
+    .button3
+    {
         justify-content: space-around;
         flex-direction: column;
         border: 0px;
-        color:blue;
+        color:var(--color-text-titulo);
         text-justify: inter-word;
         margin:0;
-        
+        font-size:20px;
+        cursor: pointer;
 
     }
 
-    .button2 {
-        flex-direction: column;
-        border: 0px;
-        color:blue;
-
-    }
-   
+    
 }
 
 

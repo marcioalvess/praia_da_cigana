@@ -26,6 +26,10 @@ function abrir3(elemento){
     }
 }
 
+function abrir4(elemento){
+    window.open("https://www.google.com.br/maps/place/Praia+da+Cigana/@-6.6051451,-47.4566174,17z/data=!3m1!4b1!4m5!3m4!1s0x92da09fb850e84d3:0x25e7f0528bd0d746!8m2!3d-6.6051504!4d-47.4544287");
+}
+
 
 
 function redir_historico(elemento){
@@ -37,6 +41,7 @@ function redir_fotos(elemento){
 function redir_cardapio(elemento){
     window.open("https://digitalinnovation.one/");
 }
+
 
 /* function trocar(){
     //document.getElementById("mousemove").innerHTML = "Obrigado por pasar o mouse";
