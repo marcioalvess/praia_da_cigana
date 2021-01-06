@@ -2,8 +2,11 @@
 /* Variáveis das cores*/
 :root{
     --color-background:#6495ed;
-    --color-text-button:#631563;
-    --color-text-titulo:#1f1f3f; 
+    --color-text-button:#723232;
+    --color-text-titulo:#0b9ea3;
+    --color-text-subtitulo:#2d3033;
+    --color-background-titulo:#beeef0;
+
 
 }
 
@@ -11,29 +14,38 @@ html,
 body
 {
     height: 100vh;
-    padding: 0px;
+    padding: 0;
     background-color:var(--color-background);
 }
 
 .titulo {
     display: flex;
     font-size: 4rem;
-    color: var(--color-text-titulo);
-    padding:0;
-    height: 0;
-    height: 0;
-    margin:1rem;
+    color:var(--color-text-titulo);
+    padding: 0;
+    margin:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* font-style: italic; */
+    padding: 4rem 2rem 5rem;/* espaços entre o título e as bordas */
+    background-color:var(--color-background-titulo);
+    border-top: 3px solid var(--color-text-titulo);
+    border-bottom: 3px solid var(--color-text-titulo);
+    margin-top: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
 }
+
 
 .logo {
         
     display: flex;
-    margin-top: -2rem; /* distância da imagem pra margem de cima */
+    margin-top: -16rem; /* distância da imagem pra margem de cima */
     margin-left: auto; /* puou a imagem pra esquerda */
-    height: 15rem;
-    width: 17rem;
+    margin-right: 1rem;/* distância da imagem pra margem direita */
+    height: 19rem;
+    width: 22rem;
     padding:0; 
-    margin-right: 2rem;/* distância da imagem pra margem direita */
+    
 }
 .sol{
     justify-content: center;
@@ -42,78 +54,55 @@ body
     margin-left: 20rem;
     margin-right: 10rem;
     padding:0;
+
        
 }
     
 button {
-        color:var(--color-text-button);
-        font-weight: bold;/* negrito */
-        border:transparent;
-        background:transparent;
-        justify-content:space-evenly;/* espaço constante ente os botões */
-        font-size: 20px;/* tamanho da fonte */
-        font: archivo;
-        margin-left: -1rem;
-        margin-right: 0;
-        text-decoration: none;
-        text-transform:uppercase;/* transforma o texte em maiúsculo */
-        transition: background 0.2s;
-        cursor: pointer;
+    color:var(--color-text-button);
+    font-weight: bold;/* negrito */
+    border:transparent;
+    background:transparent;
+    justify-content:space-evenly;/* espaço constante ente os botões */
+    font: 200 1.4rem anchivo;/* espessura; tamanho e tipo */
+    margin-left: -1rem;/* alinhamento da coluna com os botões */
+    margin-right: 0;
+    margin-top: -2rem;
+    text-decoration: none;
+    text-transform:uppercase;/* transforma o texte em maiúsculo */
+    transition: background 0.2s;
+    cursor: pointer;      
+}
 
+
+.menu_topo{
+    display:-webkit-flex;
+    padding:0;
+    width: 0;
+    height:0;
+    justify-content: space-around;/* espaço entre os botões */
+    background-color: transparent;/*cor de fundo dos botões */
+    width: 80%;/* localização exata na página */
+    margin-top:-7%;/* distância dos botões pra margem superior */
+    margin-right: 13rem;
+    margin-left: 2rem;
+    cursor: pointer;/* mãozinha quando passar o mouse */
         
 }
-.titulo {
-    padding: 3.2rem 2rem;
-    background-color: transparent;
-    border-top: 1px solid var(--color-text-titulo);
-    margin-top: 3.2rem;
+    
+.button1,
+.button2,
+.button3
+{
+    justify-content: space-around;
+    flex-direction: column;
+    border: 0px;
+    color:var(--color-text-subtitulo);
+    text-justify: inter-word;
+    margin:0;
+    margin-left:0;
+    margin-right: 3rem;
+    font-size:20px;
+    cursor: pointer;
 }
 
-    .menu_topo{
-        display:-webkit-flex;
-        padding:0;
-        width: 0;
-        height:0;
-        border:0;
-
-        justify-content: space-around;/* espaço entre os botões */
-        /* align-items:center; */ /* Esse que não estava deixando o botão fixo */
-        /* flex-direction: column; --> coloca um em baixo do outro*/
-        background-color: transparent;/*cor de fundo dos botões */
-        width: 80%;/* localização exata na página */
-        margin-top:-8%;/* distância dos botões pra margem superior */
-        margin-right: 0;
-        margin-left: 2rem;
-        
-        /*  outline: 55px; */
-        cursor: pointer;/* mãozinha quando passar o mouse */
-        
-    }
-    
-    .button1,
-    .button2,
-    .button3
-    {
-        justify-content: space-around;
-        flex-direction: column;
-        border: 0px;
-        color:var(--color-text-titulo);
-        text-justify: inter-word;
-        margin:0;
-        font-size:20px;
-        cursor: pointer;
-
-    }
-
-    
-}
-
-
-.topo{
-    
-    width: 50px;
-    height: 30rem;
-    padding: 5rem;
-
-
-}
