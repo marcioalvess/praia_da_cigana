@@ -1,0 +1,77 @@
+
+.text-hist{
+    justify-items: auto;
+    border:1rem solid var(--color-box-historico);
+    background: var(--color-box-historico);
+    margin-top: 3rem;
+    padding: -2 2rem;
+    border-top: 2rem solid var(--color-box-historico);
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: -1rem;
+    font: 700 2rem arial;
+    color: var(--color-text-titulo);
+}
+.text-hist img{
+    justify-items: auto;
+    padding: 1.3rem;
+    height: 20rem;
+    width: 25rem;
+    margin-top: -2rem;
+    padding: 3 4rem;
+    border-top: 1rem solid var(--color-box-historico);
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.text-hist p{
+    text-align: justify;
+    font: 100 1.3rem arial;
+    line-height: 1.5rem;/*altura da linha do texto*/
+    
+}
+
+.person-funtion span
+{
+    flex-direction: column;
+    padding: 6;
+    color:wheat;
+
+
+}
+
+.person-item {
+    margin-top: 3rem;
+    padding: 3 4rem;
+    border-top: 3rem solid var(--color-box-historico);
+    border: auto solid var(--color-box-historico);
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.person-item img{
+    display: flex;
+    justify-items: auto;
+    margin-block-end: auto;
+    padding: 1.3rem;
+    height: 15rem;
+    width: 17rem;
+    border-radius: 50%;
+
+}
+
+.person-item div,
+.person-item header,
+.person-item p
+{
+    background: var(--color-box-historico);
+    border: 1rem solid var(--color-box-historico);
+    text-align: justify;
+    font: 100 1.3rem arial;
+
+}
+
+

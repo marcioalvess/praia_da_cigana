@@ -33,10 +33,10 @@ function abrir4(elemento){
 
 
 function redir_historico(elemento){
-    window.open("http://127.0.0.1:5501/historico.html");
+    window.open("/historico.html");//pra abrir a pagina interna basta colocar a barra e o nome da pasta
 }
 function redir_fotos(elemento){
-    window.open("https://www.google.com/url?sa=i&url=https%3A%2F%2Fglamurama.uol.com.br%2Fcom-fronteiras-fechadas-por-causa-da-pandemia-ilhas-maldivas-deverao-reabrir-para-turistas-em-julho%2F&psig=AOvVaw2DEGIW-iJ3CImpu3oHumtz&ust=1608598346215000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIifoPzt3e0CFQAAAAAdAAAAABAD");
+    window.open("/album.html");
 }
 function redir_cardapio(elemento){
     window.open("https://digitalinnovation.one/");
