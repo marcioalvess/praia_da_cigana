@@ -1,0 +1,73 @@
+
+
+body{
+    background: var(--color-body-card);
+    font-family: sans-serif;
+
+}
+.form {
+    width: 400px; /* largura do card */
+    margin: auto;
+    padding-top: 50px; /* espaçamento do card pra margem */
+}
+.card{
+    box-shadow: 5px 5px 5px #ccc; /* efito sombra */
+    background-color: var(--color-backgroud-card);
+    padding: 30px;
+    border-radius: 5px;/* arredondar a borda */
+}
+
+.card-top{
+    text-align: center;/* alinhar texto no centro do card */
+}
+
+.card-group {/* regra para espaçamento de todos os campos */
+    margin-bottom: 10px;
+}
+
+.card-group > label{
+    width: 100%;
+    color:var(--color-label-card);
+    display: block;/* quebra linha */
+}
+
+.card-group > input{
+    border-radius: 5px; /* borda arredondada */
+    outline: 0;/* borda azul que fica no espaço do input */
+    width: 100%; /* largura */
+    height: 25px; /* altura */
+    padding: 5px; /* alinhamento do texto no input */
+
+}
+.card-group > button{
+    background-image:linear-gradient(to right, #00ff4c, #022e09) ;/* cor degrader */
+    width: 100%;/* em relação ao card */
+    margin-top: auto;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 30px;
+    padding: 15px; /* espaçamento */
+    color: var(--color-button-acesso);
+    border: 0;
+    outline: 0;/* tira a borda azul */
+    
+    
+}
+
+.btn button:hover{ /* :houver é que dá efeito no mouse */
+    background-image:linear-gradient(to right, rgb(1, 20, 6)) ;/* cor degrader */
+    
+
+}
+/* .img-login{
+    border-radius: 50px;
+    width: 100px;
+    height: 35px ;
+    box-shadow: 0px 0px 5px #ccc;
+} */
+
+.title-card {
+    color:var(--color-title-card);
+    margin-top: 3px;
+    margin-bottom: 3px;
+}

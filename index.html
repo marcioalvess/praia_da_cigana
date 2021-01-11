@@ -13,20 +13,17 @@
 
 <body onload="load()"> <!-- mensagem de que está carregada -->
     <section>
-        <footer>
-
-            <h1 class="titulo">Praia da Cigana</h1>
-            <img class="logo" src="/images/logo-cigana3.png" alt="Logo">
-        
-        </footer>
-        
-            
-            
-        <div class="sol">
-            <img src="/images/Sol novo.png" alt="Sol">
+        <div>
+            <button  id="button-acesso" onclick="redir_acesso(this)" href="/form.html">Login|Associado</button>
         </div>
         
-        
+                
+        <footer>
+            <h1 class="titulo">Praia da Cigana</h1>
+            <img class="logo" src="/images/logo-cigana3.png" alt="Logo">
+                 
+        </footer>
+                
         <div class="menu_topo">
            
             <div class="button1">
@@ -49,12 +46,6 @@
                 <button type="button" onclick="abrir3(this)" >Pedidos</button>
                 <p id="peixe" onclick="redir_peixe(this)"></p> 
                 <p id="suco" onclick="redir_suco(this)"></p>
-                    
-                    <select onchange="menu_suco(this)">
-                        <option value="suco1">Laranja</option>
-                        <option value="suco2">Goiaba</option>
-                        <option value="suco3">Abacaxi</option>
-                    </select>
                 <p id="carne" onclick="redir_carne(this)"></p>
             </div>
 

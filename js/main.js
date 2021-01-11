@@ -3,6 +3,10 @@ function load(){
     alert("Pagina carregada!")
 }
 
+function redir_acesso(elemento){
+    window.open("/form.html")
+}
+
 function abrir(elemento){
     document.getElementById("historico").innerHTML= "Histórico";
     document.getElementById("fotos").innerHTML= "Fotos";
