@@ -12,19 +12,21 @@
         <link hrel="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 
 <body onload="load()"> <!-- mensagem de que está carregada -->
+    
+<div>
+    <img class="fundo" src="/images/fotos_album/cigana8.jpg" alt="fundo">
+</div>
+
+       <footer class="acesso"><!-- acesso do associado é clicando na logo -->
+            <!-- href="/form.html"<h1 class="titulo">Praia da Cigana</h1> -->
+            <a  onclick="redir_acesso(this)">
+                <img class="logo" src="/images/logo-cigana3.png" alt="Logo">
+            </a>               
+        </footer> 
     <section>
-        <div>
-            <button  id="button-acesso" onclick="redir_acesso(this)" >Login|Associado</button>
-        </div>
-        
-                
-        <footer>
-            <h1 class="titulo">Praia da Cigana</h1>
-            <img class="logo" src="/images/logo-cigana3.png" alt="Logo">
-                 
-        </footer>
-                
-        <div class="menu_topo">
+                     
+                     
+        <header class="menu_topo">
            
             <div class="button1">
             <button id="button1" type="button" onclick="abrir(this)">Associação</button>
@@ -56,12 +58,10 @@
            <article class="group">
                <p class=""></p>
            </article>
-        </div >
-
-      
+        </header >
+     
     </section>
-    
-    
+      
 
 </body>
 </html>

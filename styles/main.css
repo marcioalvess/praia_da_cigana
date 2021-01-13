@@ -1,9 +1,9 @@
 /* Variáveis das cores*/
 :root{
     --color-background-index:#010307;
-    --color-text-button:#723232;
+    --color-text-button:#070000;
     --color-text-title:#145308;
-    --color-text-subtitulo:#2d3033;
+    --color-text-subtitulo:#eef0f1;
     --color-background-title:#f3a023;
     --color-box-historico: #f3b01f;
     --color-body-card:#f0f0f0;
@@ -20,61 +20,72 @@
 html,
 body
 {
-    height: 100vh;
+    height: 0;
     padding: 0;
     background-color:var(--color-background-index);
 }
 
-#button-acesso {
-    box-shadow: 1px 1px 5px #ccc; /* efito sombra */
-    color: var(--color-text-title);
-    background-image:linear-gradient(to right, #00ff4c, #022e09) ;/* cor degrader */
-    width: 20%;/* em relação ao card */
-    margin-top:3px;
-    margin-bottom: -30px;
-    margin-left: 2px;
-    margin-right: 2px;
-    border-radius: 30px;
-    padding: 8px; /* espaçamento */
-    color: var(--color-button-acesso);
-    border: 0;
-    outline: 0;/* tira a borda azul */
+.fundo {
+    
+    padding-top: -4px;;
+    margin-top: -4px;
+    margin-bottom: 4px;
+    width: 84rem;
+    height: -100rem;
+} 
 
+.acesso a img {
+    width: 50rem;
+    height: 40rem;
+    display: flex;
+    justify-content:left;
+    margin-top: -51rem;
+    margin-bottom: 5rem;
+    margin-left: 37rem;
+    margin-right: 20rem;
+    padding: -1rem; /* espaçamento */
+    cursor: pointer;
 }
 
-.titulo {
+/* .acesso a img:hover{
+    background: wheat;
+} */
+
+/* .titulo {
     box-shadow: 1px 1px 5px #ccc; /* efito sombra */
-    display: flex;
+    /* display: flex;
     font-size: 4rem;
     color:var(--color-text-title);
     padding: 0;
     margin:0;
-    font-family:sans-serif;
+    font-family:sans-serif; */
     /* font-style: italic; */
-    padding: 4rem 2rem 5rem;/* espaços entre o título e as bordas */
-    background-color:var(--color-background-title);
+    /*padding: 4rem 2rem 5rem;/* espaços entre o título e as bordas */
+    /*background: transparent;
+    /* background-color:var(--color-background-title); */
     /* border-top: 2px solid var(--color-text-title); */
-    /* border-bottom: 2px solid var(--color-text-title); */
+    /* border-bottom: 2px solid var(--color-text-title); 
     margin-top: 2rem;
     margin-left: -1rem;
     margin-right: -1rem;
 }
+ */
 
-/* .painel_fundo {
-    width: 100%;
-    height: 100%;
-} */
 
 
 .logo {
         
     display: flex;
-    margin-top: -16rem; /* distância da imagem pra margem de cima */
+    margin-top: -50rem; /* distância da imagem pra margem de cima */
+    margin-bottom: 3rem;
     margin-left: auto; /* puou a imagem pra esquerda */
     margin-right: 1rem;/* distância da imagem pra margem direita */
     height: 19rem;
     width: 22rem;
-    padding:0; 
+    padding-top: 3px; 
+    grid-area: initial;
+    position: relative;
+    
     
 }
 /* .sol{
@@ -94,44 +105,56 @@ button {
     border:transparent;
     background:transparent;
     justify-content:space-evenly;/* espaço constante ente os botões */
-    font: 200 1.4rem anchivo;/* espessura; tamanho e tipo */
+    font: 700 1.4rem arial;/* espessura; tamanho e tipo */
     margin-left: -1rem;/* alinhamento da coluna com os botões */
     margin-right: 0;
-    margin-top: -2rem;
+    /* margin-top: -100rem; */
     text-decoration: none;
     /*text-transform:uppercase; transforma o texte em maiúsculo */
-    transition: background 0.2s;
-    cursor: pointer;      
+    
+    cursor: pointer;  
+        
 }
 
 
 .menu_topo{
-    display:-webkit-flex;
+    display:-webkit-flex;/* coloca os botões lado a lado */
     padding:0;
-    width: 0;
+    width: 3rem;
     height:0;
-    justify-content: space-around;/* espaço entre os botões */
+    /*justify-content: space-around; espaço entre os botões */
     background-color: transparent;/*cor de fundo dos botões */
     width: 80%;/* localização exata na página */
-    margin-top:-7%;/* distância dos botões pra margem superior */
+    /*max-resolution:90%; distância dos botões pra margem superior */
+    margin-top: -40rem;
+    margin-bottom: -100rem;
     margin-right: 13rem;
     margin-left: 2rem;
     cursor: pointer;/* mãozinha quando passar o mouse */
-        
+    
+}
+button:hover{
+    transition: background 1s;
+    background: var(--color-button-acesso);
 }
     
 .button1,
 .button2,
-.button3
+.button3,
+.button4
 {
     justify-content: space-around;
     flex-direction: column;
     border: 0px;
     color:var(--color-text-subtitulo);
-    text-justify: inter-word;
     margin:0;
     margin-left:0;
     margin-right: 3rem;
     font-size:20px;
     
+}
+
+@media (min-width:1100px){
+    
+
 }
