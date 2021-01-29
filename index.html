@@ -7,61 +7,69 @@
     
 </head>
         <link rel="stylesheet" href="/styles/main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script type="text/javascript" src= "js/main.js"></script>
         <!-- link de fontes -->
         <link hrel="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
 
 <body onload="load()"> <!-- mensagem de que está carregada -->
     
-<div>
-    <img class="fundo" src="/images/fotos_album/cigana8.jpg" alt="fundo">
-</div>
+        <div class="acesso" onclick="redir_acesso(this)"><!-- acesso do associado é clicando na logo -->
+            
+            <a>
+                <img class="logo"  src="/images/logo-cigana3.png" alt="Logo">
+            </a>  
+                       
+        </div> 
+        <nav>
+            
+            <ul id="ul-principal">
+                <li class="li-p"><a href="">Home</a></li>
 
-       <footer class="acesso"><!-- acesso do associado é clicando na logo -->
-            <!-- href="/form.html"<h1 class="titulo">Praia da Cigana</h1> -->
-            <a  onclick="redir_acesso(this)">
-                <img class="logo" src="/images/logo-cigana3.png" alt="Logo">
-            </a>               
-        </footer> 
-    <section>
+                <li class="li-p">
+                    <a href="javascript://" class="bt1">
+                    Entretenimento
+                    <img src="/images/icones/setabranca.png" height="12">
+                    </a>
+                    <ul class="ul-entret">
+                        <li><a href="">Link1</a></li>
+                        <li><a href="">Link2</a></li>
+                        <li><a href="">Link3</a></li>
+                        <li><a href="">Link4</a></li>
+                    </ul>
+                </li>
+                <li class="li-p">
+                    <a href="javascript://" class="bt2">
+                    Cardápios
+                    <img src="/images/icones/setabranca.png" height="12">
+                    </a>
+                    <ul class="ul-cardapio">
+                        <li><a href="">Link1</a></li>
+                        <li><a href="">Link2</a></li>
+                        <li><a href="">Link3</a></li>
+                        <li><a href="">Link4</a></li>
+                    </ul>
+                
+                </li>
+                <li class="li-p">
+                    <a href="javascript://" class="bt3">
+                    Sobre
+                    <img src="/images/icones/setabranca.png"  height="12">
+                    </a>
+                    <ul class="ul-sobre">
+                        <li><a href="" onclick="redir_historico(this)">Histórico</a></li>
+                        <li><a href="" onclick="redir_fundadores(this)">Fundadores</a></li>
+                        <li><a href="">Associação</a></li>
+                    </ul>
+                </li>
+                <li class="li-p" >
+                    <a onclick="redir_localiza(this)" href="/https://www.google.com/maps/place/Praia+da+Cigana/@-6.6051504,-47.4566174,17z/data=!3m1!4b1!4m5!3m4!1s0x92da09fb850e84d3:0x25e7f0528bd0d746!8m2!3d-6.6051504!4d-47.4544287">
+                        Localização
+                    </a>
+                </li>
+            </ul>
+        </nav>
+         
                      
-                     
-        <header class="menu_topo">
-           
-            <div class="button1">
-            <button id="button1" type="button" onclick="abrir(this)">Associação</button>
-            <!-- <button id="button" onmouseover="abrir(this)" onmouseout="voltar(this)" >Associação</button> -->
-            <p id="historico" onclick="redir_historico(this)" href="/historico.html"></p>
-            <p id="fotos" onclick="redir_fotos(this)"></p>
-            <p id="cardapio" onclick="redir_cardapio(this)"></p>
-            </div>
-            <!-- <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouser aqui</p> -->
-
-            <div class="button2">
-            <button type="button" onclick="abrir2(this)" >Eventos</button>
-            <p id="feijoada" onclick="redirecionar(this)"></p> 
-            <p id="festival-sorvete" onclick="redirecionar(this)"></p>
-            <p id="corrida-canoa" onclick="redirecionar(this)"></p>
-            </div>
-
-            <div class="button3">
-                <button type="button" onclick="abrir3(this)" >Pedidos</button>
-                <p id="peixe" onclick="redir_peixe(this)"></p> 
-                <p id="suco" onclick="redir_suco(this)"></p>
-                <p id="carne" onclick="redir_carne(this)"></p>
-            </div>
-
-            <div class="button4">
-                <button type="button" onclick="abrir4(this)" >Localização</button>
-               <!--  <a href="https://www.google.com.br/maps/place/Praia+da+Cigana/@-6.6051451,-47.4566174,17z/data=!3m1!4b1!4m5!3m4!1s0x92da09fb850e84d3:0x25e7f0528bd0d746!8m2!3d-6.6051504!4d-47.4544287">Praia da Cigana</a> -->
-            </div>
-           <article class="group">
-               <p class=""></p>
-           </article>
-        </header >
-     
-    </section>
-      
-
 </body>
 </html>

@@ -1,7 +1,12 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
 /* Variáveis das cores*/
 :root{
     --color-background-index:#010307;
-    --color-text-button:#070000;
+    --color-text-button:#faf8f8;
     --color-text-title:#145308;
     --color-text-subtitulo:#eef0f1;
     --color-background-title:#f3a023;
@@ -9,150 +14,81 @@
     --color-body-card:#f0f0f0;
     --color-backgroud-card:#ffffff;
     --color-label-card:#4b4b4b;
-    --color-button-acesso:#ffffff;
+    --color-button-acesso:#a19d9d;
     --color-title-card:#10dd5f;
 
-     
-
-
 }
 
-html,
 body
 {
-    height: 0;
-    padding: 0;
-    background-color:var(--color-background-index);
+    
+    font-family: arial;
+    background: url("/images/fotos_album/cigana8.jpg");
+    background-size: 100%;
+    
 }
 
-.fundo {
-    
-    padding-top: -4px;;
-    margin-top: -4px;
-    margin-bottom: 4px;
-    width: 84rem;
-    height: -100rem;
-} 
+ul{
+    list-style: none;/* tira as bolinhas do menu */
+}
 
-.acesso a img {
-    width: 50rem;
-    height: 40rem;
-    display: flex;
-    justify-content:left;
-    margin-top: -51rem;
-    margin-bottom: 5rem;
-    margin-left: 37rem;
-    margin-right: 20rem;
-    padding: -1rem; /* espaçamento */
+a{
+    text-decoration: none;
+    color: wheat;
+    display: block;
+    padding: 0px 20px;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255,.3);
+}
+
+nav{
+    margin-left: -60px;
+    background:transparent;
+    height: 50px;
+    
+}
+
+ul#ul-principal{
+    background-color:black;
+    width: 90%;
+    margin: auto;
+}
+
+.li-p{
+    line-height: 50px;
+    float: left;/* faz o menu flutuar */
+}
+
+ul li ul li{ /*  */
+    background-color:transparent;
+}
+
+.ul-entret .ul-cardapios .ul-sobre{
+    display: none;
+}
+
+.logo{
+    padding: 0px;
+    height: 38rem;
+    margin-top: -0.1rem;
+    margin-left: 34rem;
+}
+
+.logo:hover {
+    background-color:transparent;
+}
+.acesso {
+    height: 0;
+    width: 0;
     cursor: pointer;
 }
-
-/* .acesso a img:hover{
-    background: wheat;
-} */
-
-/* .titulo {
-    box-shadow: 1px 1px 5px #ccc; /* efito sombra */
-    /* display: flex;
-    font-size: 4rem;
-    color:var(--color-text-title);
-    padding: 0;
-    margin:0;
-    font-family:sans-serif; */
-    /* font-style: italic; */
-    /*padding: 4rem 2rem 5rem;/* espaços entre o título e as bordas */
-    /*background: transparent;
-    /* background-color:var(--color-background-title); */
-    /* border-top: 2px solid var(--color-text-title); */
-    /* border-bottom: 2px solid var(--color-text-title); 
-    margin-top: 2rem;
-    margin-left: -1rem;
-    margin-right: -1rem;
-}
- */
-
-
-
-.logo {
-        
-    display: flex;
-    margin-top: -50rem; /* distância da imagem pra margem de cima */
-    margin-bottom: 3rem;
-    margin-left: auto; /* puou a imagem pra esquerda */
-    margin-right: 1rem;/* distância da imagem pra margem direita */
-    height: 19rem;
-    width: 22rem;
-    padding-top: 3px; 
-    grid-area: initial;
-    position: relative;
-    
-    
-}
-/* .sol{
-    justify-content: center;
-    height: 1rem;
-    width: -10rem;
-    margin-left: 20rem;
-    margin-right: 10rem;
-    padding:0;
-
-       
-} */
-    
-button {
-    color:var(--color-text-button);
-    font-weight: bold;/* negrito */
-    border:transparent;
-    background:transparent;
-    justify-content:space-evenly;/* espaço constante ente os botões */
-    font: 700 1.4rem arial;/* espessura; tamanho e tipo */
-    margin-left: -1rem;/* alinhamento da coluna com os botões */
-    margin-right: 0;
-    /* margin-top: -100rem; */
-    text-decoration: none;
-    /*text-transform:uppercase; transforma o texte em maiúsculo */
-    
-    cursor: pointer;  
-        
-}
-
-
-.menu_topo{
-    display:-webkit-flex;/* coloca os botões lado a lado */
-    padding:0;
-    width: 3rem;
-    height:0;
-    /*justify-content: space-around; espaço entre os botões */
-    background-color: transparent;/*cor de fundo dos botões */
-    width: 80%;/* localização exata na página */
-    /*max-resolution:90%; distância dos botões pra margem superior */
-    margin-top: -40rem;
-    margin-bottom: -100rem;
-    margin-right: 13rem;
-    margin-left: 2rem;
-    cursor: pointer;/* mãozinha quando passar o mouse */
-    
-}
-button:hover{
-    transition: background 1s;
-    background: var(--color-button-acesso);
+.acesso:hover {
+    background-color: transparent;
 }
     
-.button1,
-.button2,
-.button3,
-.button4
-{
-    justify-content: space-around;
-    flex-direction: column;
-    border: 0px;
-    color:var(--color-text-subtitulo);
-    margin:0;
-    margin-left:0;
-    margin-right: 3rem;
-    font-size:20px;
-    
-}
+
 
 @media (min-width:1100px){
     
